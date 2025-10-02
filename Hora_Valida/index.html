@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calificacion Alfabetica</title>
+
+        <!-- LINK BS CSS -->
+        <link rel="stylesheet" href="/bs/css/bootstrap.min.css">
+    </head>
+    <body class="d-flex flex-column min-vh-100 align-items-center justify-content-center">
+
+        <main class="d-flex flex-column align-items-center justify-content-center border border-2 border-dark rounded-3 p-4">
+            
+            <h1 class="mb-4 text-center fw-bold">
+                Validar Hora y Sumar Segundo
+            </h1>
+            
+            <!-- FORMULARIO PARA OBTENER LA HORA -->
+            <form action="#" id="form-hora">
+                <div>
+                    <label for="hora">Introduce la hora separado por " : " en el formato HH:MM:SS</label>
+                    <input type="text" id="hora" name="hora" placeholder="HH:MM:SS">
+                </div>
+                <div id="mensaje-error" class="text-danger mt-2" style="display: none;"></div>
+                <div class="mt-3">
+                    <input type="submit" class="btn btn-primary w-100" value="Validar Hora">
+                </div>
+            </form>
+
+            <!-- CUADRO DE RESULTADOS -->
+            <div id="cuadro-resultado" class="d-none">
+                <!-- RESULTADOS -->
+                <!-- PRIMER RESULTADO -->
+                <div class="w-100 mb-2 text-start d-grid gap-1">
+                    <div class="row">
+                        <span class="col-6">Hora: </span>
+                        <span class="col-6" id="hora-resultado"></span>
+                    </div>
+                    <div class="row">
+                        <span class="col-6">Minutos: </span>
+                        <span class="col-6" id="minutos-resultado"></span>
+                    </div>
+                    <div class="row">
+                        <span class="col-6">Segundos: </span>
+                        <span class="col-6" id="segundos-resultado"></span>
+                    </div>
+                </div>
+
+                <!-- SEGUNDO RESULTADO -->
+                <div class="w-100 mt-2 text-start d-grid gap-1">
+                    <div class="row">
+                        <span class="col-6">Hora + 1s: </span>
+                        <span class="col-6" id="hora-sumada-resultado"></span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- APP -->
+        <script src="./app.js"></script>
+        <!-- LINK BS JS -->
+        <script src="/bs/js/bootstrap.min.js"></script>
+    </body>
+    
+</html>
