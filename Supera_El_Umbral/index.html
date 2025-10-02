@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Supera el Umbral</title>
+
+        <!-- LINK BS CSS -->
+        <link rel="stylesheet" href="/bs/css/bootstrap.min.css">
+        <!-- LINK CSS -->
+        <link rel="stylesheet" href="./style.css">  
+    </head>
+    <body class="d-flex flex-column min-vh-100 align-items-center justify-content-center">
+
+        <main class="d-flex flex-column align-items-center justify-content-center border border-2 border-dark rounded-3 p-4">
+            
+            <h1 class="mb-4 text-center fw-bold">
+                Supera el Umbral
+            </h1>
+            
+            <!-- FORMULARIO PARA OBTENER EL NUMERO -->
+            <form action="#" id="form-numero">
+                <div>
+                    <label for="numero">Introduce un número entero (positivo):</label>
+                    <input type="number" id="numero" name="numero" placeholder="Número entero">
+                </div>
+                <div id="mensaje-error" class="text-danger mt-2" style="display: none;"></div>
+                <div class="mt-3">
+                    <input type="submit" class="btn btn-primary w-100" value="Validar Número">
+                </div>
+            </form>
+
+            <!-- CUADRO DEL ARRAY -->
+            <div id="cuadro-array" class="d-none">
+                <h2 class="text-center">Array de Números</h2>
+                <ul id="array-numeros" class="list-unstyled">
+                    <!-- NUMEROS ARRAY -->
+                </ul>
+            </div>
+
+            <!-- CUADRO DE RESULTADOS -->
+            <div id="cuadro-resultado" class="d-none">
+                <!-- RESULTADOS -->
+                <div class="w-100 mt-2 text-start d-grid gap-1">
+                    <div class="row">
+                        <span class="col-6">Número umbral: </span>
+                        <span class="col-6" id="numero-umbral"></span>
+                    </div>
+                    <div class="row fila-resultado">
+                        <span class="col-6">Resultado: </span>
+                        <span class="col-6" id="resultado-resultado"></span>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- APP -->
+        <script src="./app.js"></script>
+        <!-- LINK BS JS -->
+        <script src="/bs/js/bootstrap.min.js"></script>
+    </body>
+    
+</html>

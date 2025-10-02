@@ -1,0 +1,21 @@
+#array-numeros {
+    font-size: 9px;
+    width: 400px;
+    list-style: none;
+    padding-top: 20px;
+}
+h2 {
+    padding-top: 20px;
+    font-size: 20px;
+}
+#resultado-resultado {
+
+    padding-top: 20px;
+}
+.fila-resultado {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
